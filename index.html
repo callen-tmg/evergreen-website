@@ -1,3 +1,12 @@
+
+
+Conversations
+ 
+Program Policies
+Powered by Google
+Last account activity: 0 minutes ago
+Open in 1 other location · Details
+Apollo
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,26 +43,8 @@
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #1a1a1b;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: baseline;
-        }
-        
-        .logo .the {
-            font-size: 16px;
-            margin-right: 2px;
-        }
-        
-        .logo .evergreen {
-            color: #22c55e;
-        }
-        
-        .logo .project {
-            font-size: 16px;
-            margin-left: 2px;
+            max-height: 40px;
+            width: auto;
         }
         
         /* Hero */
@@ -198,19 +189,28 @@
             font-size: 36px;
             font-weight: 700;
             text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .pricing-subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 16px;
             margin-bottom: 60px;
         }
         
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .pricing-card {
             background: #fff;
             border-radius: 16px;
-            padding: 40px;
+            padding: 50px;
             border: 1px solid #e5e7eb;
             position: relative;
         }
@@ -227,7 +227,7 @@
             transform: translateX(-50%);
             background: #22c55e;
             color: #fff;
-            padding: 6px 16px;
+            padding: 6px 20px;
             border-radius: 20px;
             font-size: 12px;
             font-weight: 600;
@@ -235,17 +235,8 @@
             letter-spacing: 1px;
         }
         
-        .pricing-card h3 {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-        
         .pricing-card .plan-name {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             color: #1a1a1b;
             margin-bottom: 8px;
@@ -254,7 +245,7 @@
         .pricing-card .price {
             font-size: 48px;
             font-weight: 700;
-            color: #1a1a1b;
+            color: #22c55e;
             margin-bottom: 8px;
         }
         
@@ -264,10 +255,14 @@
             color: #6b7280;
         }
         
-        .pricing-card .description {
-            font-size: 16px;
-            color: #4b5563;
-            margin-bottom: 24px;
+        .commitment {
+            font-size: 14px;
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 30px;
+            padding: 10px;
+            background: #f9fafb;
+            border-radius: 8px;
         }
         
         .pricing-card ul {
@@ -276,10 +271,15 @@
         }
         
         .pricing-card li {
-            padding: 8px 0;
-            padding-left: 24px;
+            padding: 12px 0;
+            padding-left: 28px;
             position: relative;
             color: #4b5563;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .pricing-card li:last-child {
+            border-bottom: none;
         }
         
         .pricing-card li::before {
@@ -395,6 +395,7 @@
         }
         
         footer .logo {
+            max-height: 30px;
             margin-bottom: 16px;
         }
         
@@ -423,9 +424,8 @@
 
 <header>
     <div class="container">
-        <a href="#" class="logo">
-            <span class="the">The</span><span class="evergreen">Evergreen</span><span class="project">Project</span>
-        </a>
+        <!-- NOTE: Upload your logo file to the same folder and update src -->
+        <img src="logo.png" alt="The Evergreen Project" class="logo">
     </div>
 </header>
 
@@ -434,7 +434,7 @@
         <div class="hero-pretitle">Reddit & LLM Marketing</div>
         <h1>Organic visibility that <span>compounds</span></h1>
         <p class="hero-subtitle">Strategic Reddit marketing that ranks on Google and trains AI systems to recommend your brand.</p>
-        <p class="hero-description">The Evergreen Project is a Reddit marketing agency. For a flat monthly fee, we join and create niche Reddit threads, rank them on Google, and make sure AI tools like ChatGPT, Claude, and Gemini actually mention your brand.</p>
+        <p class="hero-description">The Evergreen Project is a Reddit marketing agency. We place strategic comments and create posts in niche Reddit threads that rank on Google, ensuring AI tools like ChatGPT, Claude, and Gemini mention your brand when prospects are researching solutions.</p>
     </div>
 </section>
 
@@ -459,11 +459,11 @@
             <div class="step">
                 <div class="step-number">01</div>
                 <h3>We engage in your niche</h3>
-                <p>We join existing Reddit threads and create new posts in relevant subreddits around your product, category, and competitors.</p>
+                <p>We place strategic comments in relevant subreddits around your product, category, and competitors where high-intent buyers are actively researching.</p>
             </div>
             <div class="step">
                 <div class="step-number">02</div>
-                <h3>We rank on Google</h3>
+                <h3>We rank to the top</h3>
                 <p>Comments are written to feel native, earn upvotes, and sit at the top of Google-indexed Reddit posts for your key queries.</p>
             </div>
             <div class="step">
@@ -478,48 +478,36 @@
 <section class="pricing">
     <div class="container">
         <h2>Pricing</h2>
+        <p class="pricing-subtitle">Minimum 2 month commitment required</p>
         <div class="pricing-grid">
             <div class="pricing-card">
-                <h3>Startups</h3>
-                <div class="plan-name">Seedling</div>
-                <div class="price">$1,500<span>/month</span></div>
-                <div class="description">Lean Reddit presence for early-stage growth.</div>
+                <div class="plan-name">Growth</div>
+                <div class="price">$2,000<span>/month</span></div>
+                <div class="commitment">2 month minimum commitment</div>
                 <ul>
-                    <li>1–2 core subreddits in your niche</li>
-                    <li>Focused engagement for validation</li>
-                    <li>Basic monthly performance summary</li>
-                    <li>10-15 strategic comments/month</li>
+                    <li>15 comments per month</li>
+                    <li>Comments upvoted to top ranking position</li>
+                    <li>1 new post with up to 3 supporting comments + upvotes</li>
+                    <li>Strategic placement in high-intent threads</li>
+                    <li>Monthly performance report</li>
                 </ul>
-                <a href="#" class="btn btn-secondary">Get started</a>
+                <a href="https://calendly.com/tmg-vf/new-meeting" class="btn btn-secondary">Get started</a>
             </div>
             <div class="pricing-card featured">
                 <div class="popular-badge">Most Popular</div>
-                <h3>Growing</h3>
                 <div class="plan-name">Evergreen</div>
-                <div class="price">$2,500<span>/month</span></div>
-                <div class="description">Flagship Reddit growth for serious results.</div>
+                <div class="price">$3,500<span>/month</span></div>
+                <div class="commitment">2 month minimum commitment</div>
                 <ul>
-                    <li>Active engagement in all key subreddits</li>
-                    <li>Comments designed to rank on Google</li>
-                    <li>LLM visibility built into strategy</li>
-                    <li>25-40 strategic comments/month</li>
-                    <li>Thread creation & management</li>
+                    <li>30 comments per month</li>
+                    <li>Comments upvoted to top ranking position</li>
+                    <li>3 new posts with up to 3 supporting comments + upvotes each</li>
+                    <li>Ranking in LLMs (ChatGPT, Claude, Gemini)</li>
+                    <li>Strategic placement in high-intent threads</li>
+                    <li>Weekly performance updates</li>
+                    <li>Priority support</li>
                 </ul>
-                <a href="#" class="btn btn-primary">Book a call</a>
-            </div>
-            <div class="pricing-card">
-                <h3>Enterprise</h3>
-                <div class="plan-name">Forest</div>
-                <div class="price">$4,000<span>/month</span></div>
-                <div class="description">Multi-platform organic dominance.</div>
-                <ul>
-                    <li>Reddit + Quora + niche platforms</li>
-                    <li>Broader category coverage</li>
-                    <li>Brand protection & monitoring</li>
-                    <li>Custom reporting & dashboards</li>
-                    <li>Dedicated account manager</li>
-                </ul>
-                <a href="#" class="btn btn-secondary">Talk to us</a>
+                <a href="https://calendly.com/tmg-vf/new-meeting" class="btn btn-primary">Book a call</a>
             </div>
         </div>
     </div>
@@ -530,16 +518,16 @@
         <h2>Why evergreen marketing works</h2>
         <div class="feature-grid">
             <div class="feature">
-                <h3>LLM Presence</h3>
-                <p>ChatGPT, Claude, Gemini. We create consistent, credible mentions so AI models confidently surface your brand in recommendations.</p>
+                <h3>Top Ranking Comments</h3>
+                <p>We don't just comment—we engineer upvotes to position your brand at the top of threads where thousands see it first.</p>
             </div>
             <div class="feature">
-                <h3>Organic > Ads</h3>
-                <p>No fake reviews, no spam. Just real, high-signal conversations that improve your authority, SEO score, and brand trust.</p>
+                <h3>LLM Training</h3>
+                <p>Consistent mentions across Reddit teach AI models to recommend your brand when prospects ask for solutions.</p>
             </div>
             <div class="feature">
-                <h3>Any Niche, Global</h3>
-                <p>E-commerce, SaaS, local businesses, enterprises, agencies — if your buyers are on Reddit, we can reach them.</p>
+                <h3>High-Intent Traffic</h3>
+                <p>Reach buyers actively researching solutions in your category, not cold audiences who ignore ads.</p>
             </div>
         </div>
     </div>
@@ -549,15 +537,14 @@
     <div class="container">
         <h2>Ready to grow organically?</h2>
         <p>Book a free strategy call. We'll analyze your niche, identify opportunities, and show you exactly how Reddit marketing can work for your business.</p>
-        <a href="#" class="btn btn-primary">Book a free call</a>
+        <a href="https://calendly.com/tmg-vf/new-meeting" class="btn btn-primary">Book a free call</a>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <div class="logo">
-            <span class="the">The</span><span class="evergreen">Evergreen</span><span class="project">Project</span>
-        </div>
+        <!-- NOTE: Upload your logo file to the same folder and update src -->
+        <img src="logo.png" alt="The Evergreen Project" class="logo">
         <p>© 2026 The Evergreen Project. Reddit marketing that compounds.</p>
     </div>
 </footer>
